@@ -51,9 +51,9 @@
         android:contentDescription="@string/desc_op_div"
         android:text="@string/op_div"
         android:theme="@style/Theme.Button.Operator"
-        app:layout_constraintBottom_toTopOf="@id/rowGuide1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/columnGuide4"
+        app:layout_constraintBottom_toBottomOf="@id/rowGuide1"
+        app:layout_constraintEnd_toStartOf="@id/columnGuide4"
+        app:layout_constraintStart_toEndOf="@id/columnGuide3"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.android.calculator2.HapticButton
@@ -92,10 +92,10 @@
         android:contentDescription="@string/desc_op_mul"
         android:text="@string/op_mul"
         android:theme="@style/Theme.Button.Operator"
-        app:layout_constraintBottom_toBottomOf="@id/rowGuide1"
+        app:layout_constraintBottom_toBottomOf="@id/rowGuide2"
         app:layout_constraintEnd_toStartOf="@id/columnGuide4"
         app:layout_constraintStart_toEndOf="@id/columnGuide3"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/rowGuide1" />
 
     <com.android.calculator2.HapticButton
         android:id="@+id/digit_4"
@@ -133,10 +133,10 @@
         android:contentDescription="@string/desc_op_sub"
         android:text="@string/op_sub"
         android:theme="@style/Theme.Button.Operator"
-        app:layout_constraintBottom_toBottomOf="@id/rowGuide2"
+        app:layout_constraintBottom_toTopOf="@id/rowGuide3"
         app:layout_constraintEnd_toStartOf="@id/columnGuide4"
         app:layout_constraintStart_toEndOf="@id/columnGuide3"
-        app:layout_constraintTop_toTopOf="@id/rowGuide1" />
+        app:layout_constraintTop_toBottomOf="@id/rowGuide2" />
 
     <com.android.calculator2.HapticButton
         android:id="@+id/digit_1"
@@ -174,10 +174,10 @@
         android:contentDescription="@string/desc_op_add"
         android:text="@string/op_add"
         android:theme="@style/Theme.Button.Operator"
-        app:layout_constraintBottom_toTopOf="@id/rowGuide3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/columnGuide4"
         app:layout_constraintStart_toEndOf="@id/columnGuide3"
-        app:layout_constraintTop_toBottomOf="@id/rowGuide2" />
+        app:layout_constraintTop_toBottomOf="@id/rowGuide3" />
 
     <com.android.calculator2.HapticButton
         android:id="@+id/dec_point"
@@ -205,10 +205,10 @@
         android:contentDescription="@string/desc_del"
         android:theme="@style/Theme.Button.Numeric"
         app:icon="@drawable/ic_del"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/columnGuide3"
-        app:layout_constraintStart_toEndOf="@id/columnGuide2"
-        app:layout_constraintTop_toBottomOf="@id/rowGuide3" />
+        app:layout_constraintBottom_toTopOf="@id/rowGuide1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/columnGuide4"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.android.calculator2.HapticButton
         android:id="@+id/eq"
@@ -217,8 +217,8 @@
         android:text="@string/eq"
         android:theme="@style/Theme.Button.Action"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/columnGuide4"
-        app:layout_constraintStart_toEndOf="@id/columnGuide3"
+        app:layout_constraintEnd_toStartOf="@id/columnGuide3"
+        app:layout_constraintStart_toEndOf="@id/columnGuide2"
         app:layout_constraintTop_toBottomOf="@id/rowGuide3" />
 
     <androidx.constraintlayout.widget.Guideline
